@@ -1,0 +1,12 @@
+//base
+@import 'base';
+
+// Colors
+@import 'mixins/colors.scss';
+// Fonts
+@import 'mixins/fonts.scss';
+
+// Components
+@import 'components/header.scss';
+@import 'components/footer.scss';
+@import 'components/container-models.scss';

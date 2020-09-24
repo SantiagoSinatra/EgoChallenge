@@ -1,0 +1,61 @@
+.container-models {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 375px;
+
+  padding-top: 43px;
+
+  h1 {
+    width: 345px;
+    height: 88px;
+
+    font-family: $montserrat;
+    font-size: 35px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.26;
+    letter-spacing: -0.7px;
+    color: $font-grey;
+  }
+
+  .container-car {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 44px;
+
+    h3 {
+      width: 200px;
+      height: 30px;
+      font-family: $montserrat;
+      font-size: 28px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.07;
+      letter-spacing: -0.65px;
+      text-align: center;
+      color: $black;
+    }
+
+    p {
+      width: 268px;
+      height: 18px;
+      font-family: $montserrat;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.28px;
+      text-align: center;
+      color: $font-grey;
+    }
+  }
+}

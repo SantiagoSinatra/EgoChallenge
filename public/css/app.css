@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;
+
+600;700&display=swap);@import url(//db.onlinewebfonts.com/c/453c30f61f42e715218a487d5978f27f?family=ToyotaType-Semibold);*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+.header{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:space-between;
+  min-width:375px;
+  min-height:70px;
+  padding:0 15px;
+  border-bottom:1px solid #f7f7f7;
+  background-color:#ffffff;
+}
+
+.header .logo-ego{
+  min-width:38px;
+  min-height:40px;
+}
+
+.header .nav-button{
+  min-width:28px;
+  min-height:20px;
+}
+
+.footer{
+  min-width:375px;
+  min-height:50px;
+  font-family:"Montserrat", sans-serif;
+  background-color:#000000;
+}
+
+.container-models{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  min-width:375px;
+  padding-top:43px;
+}
+
+.container-models h1{
+  width:345px;
+  height:88px;
+  font-family:"Montserrat", sans-serif;
+  font-size:35px;
+  font-weight:bold;
+  font-stretch:normal;
+  font-style:normal;
+  line-height:1.26;
+  letter-spacing:-0.7px;
+  color:#191919;
+}
+
+.container-models .container-car{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  margin-bottom:44px;
+}
+
+.container-models .container-car h3{
+  width:200px;
+  height:30px;
+  font-family:"Montserrat", sans-serif;
+  font-size:28px;
+  font-weight:600;
+  font-stretch:normal;
+  font-style:normal;
+  line-height:1.07;
+  letter-spacing:-0.65px;
+  text-align:center;
+  color:#000000;
+}
+
+.container-models .container-car p{
+  width:268px;
+  height:18px;
+  font-family:"Montserrat", sans-serif;
+  font-size:14px;
+  font-weight:normal;
+  font-stretch:normal;
+  font-style:normal;
+  line-height:normal;
+  letter-spacing:-0.28px;
+  text-align:center;
+  color:#191919;
+}
+

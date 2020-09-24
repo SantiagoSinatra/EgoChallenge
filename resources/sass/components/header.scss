@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  min-width: 375px;
+  min-height: 70px;
+
+  padding: 0 15px;
+  
+  border-bottom: 1px solid $light-grey;
+  background-color: $white;
+
+  .logo-ego {
+    min-width: 38px;
+    min-height: 40px;
+  }
+
+  .nav-button {
+    min-width: 28px;
+    min-height: 20px;
+  }
+}
