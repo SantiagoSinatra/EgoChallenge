@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', HomePageController::class . '@index')->name('home-page');
+Route::get('/{carId}', HomePageController::class . '@show')->name('car-page');
+Route::get('order/{order}/{direction}', HomePageController::class . '@orderBy')->name('ordered-car-page');
+Route::get('filter/{filter}', HomePageController::class . '@filterBy')->name('filtered-car-page');

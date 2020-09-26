@@ -1,0 +1,46 @@
+.container-hero-model {
+
+  padding: 0 15px 38px;
+
+  img {
+    width: 100%;
+    margin-bottom: 42px;
+  }
+
+  h3 {
+    margin-bottom: 13px;
+
+    font-family: $montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.35;
+    letter-spacing: normal;
+    color: $filter-grey;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+
+    font-family: $montserrat;
+    font-size: 35px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.26;
+    letter-spacing: -0.7px;
+    color: $font-grey;
+  }
+
+  p {
+    font-family: $montserrat;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.69;
+    letter-spacing: -0.1px;
+    color: $filter-grey;
+  }
+}

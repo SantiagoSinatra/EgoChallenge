@@ -1,0 +1,18 @@
+.container-hero {
+  margin-top: 40px;
+  padding: 0 15px;
+  
+  h1 {
+    width: 345px;
+    height: 88px;
+
+    font-family: $montserrat;
+    font-size: 35px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.26;
+    letter-spacing: -0.7px;
+    color: $font-grey;
+  }
+}

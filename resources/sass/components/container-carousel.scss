@@ -1,0 +1,52 @@
+.container-carousel {
+  padding: 50px 15px 52px;
+
+  background-color: $light-grey;
+
+  img {
+    margin-bottom: 22px;
+  }
+
+  .carousel-image-title {
+    margin-bottom: 20px;
+
+    font-family: $montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.35;
+    letter-spacing: -0.4px;
+    color: $filter-grey;
+  }
+
+  .carousel-image-subtitle {
+    margin-bottom: 20px;
+
+    font-family: $montserrat;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.69;
+    letter-spacing: -0.1px;
+    color: $filter-grey;
+  }
+
+  .carousel-indicators {
+    bottom: -20px;
+
+    li {
+      width: 8px;
+      height: 8px;
+
+      border: none;
+      border-radius: 50px;
+      background-color: $indicators-grey;
+
+      &.active {
+        width: 38px;
+      }
+    }
+  }
+}

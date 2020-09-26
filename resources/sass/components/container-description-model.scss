@@ -1,0 +1,37 @@
+.container-description-model {
+  padding: 40px 15px 79px;
+
+  .row-description{
+    img {
+      width: 100%;
+    }
+
+    h3 {
+      margin: 20px 0;
+
+      font-family: $montserrat;
+      font-size: 20px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.35;
+      letter-spacing: -0.4px;
+      color: $filter-grey;
+    }
+
+    p {
+      margin-bottom: 39px;
+
+      font-family: $montserrat;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.69;
+      letter-spacing: -0.1px;
+      color: $filter-grey;
+    }
+  }
+  
+
+}

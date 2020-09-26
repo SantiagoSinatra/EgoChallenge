@@ -16,7 +16,8 @@ class CreateCarsTable extends Migration
         Schema::create('cars', function (Blueprint $table) {
             $table->id();
             $table->string('model', 50)->unique();
-            $table->string('imageLoc', 100)->unique();
+            $table->string('imageName', 100)->unique();
+            $table->string('category',50);
             $table->integer('year');
             $table->integer('price');
             $table->timestamps();

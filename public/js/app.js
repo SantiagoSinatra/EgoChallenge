@@ -19332,6 +19332,10 @@ module.exports = function(module) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+__webpack_require__(/*! ./filters */ "./resources/js/filters.js");
+
+__webpack_require__(/*! ./nav */ "./resources/js/nav.js");
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -19363,6 +19367,50 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/filters.js":
+/*!*********************************!*\
+  !*** ./resources/js/filters.js ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$("#filter").on("click", function () {
+  flipImage("#filter-img");
+  displayDropdown("#dropdown-filter-left");
+});
+$("#order").on("click", function () {
+  flipImage("#order-img");
+  displayDropdown("#dropdown-filter-right");
+});
+
+function flipImage(id) {
+  $(id).toggleClass('invert');
+}
+
+function displayDropdown(id) {
+  $(id).toggleClass('display');
+}
+
+/***/ }),
+
+/***/ "./resources/js/nav.js":
+/*!*****************************!*\
+  !*** ./resources/js/nav.js ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$("#button-nav").on("click", function () {
+  $(".container-nav").toggle();
+  $(".container-main-content").toggle();
+});
+$("#button-cross-nav").on("click", function () {
+  $(".container-nav").toggle();
+  $(".container-main-content").toggle();
+});
 
 /***/ }),
 

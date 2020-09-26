@@ -1,5 +1,3 @@
 @section('footer')
-  <footer class="footer">
-    <p>Ego Challenge - Footer</p>
-  </footer>    
+  <footer class="footer"></footer>    
 @show
