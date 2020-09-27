@@ -2,8 +2,52 @@
   padding: 40px 15px 79px;
 
   .row-description{
+    
+    @media (min-width: $breakpoint-tablet) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 55px;
+
+      .even{
+        order: 1;
+      }
+
+      .odd{
+        order: 2;
+      }
+
+      h3, p {
+        max-width: 385px;
+      }
+    }
+
+    .row-text {
+      @media (min-width: $breakpoint-tablet) {
+        &.even {
+          margin-left: 8%;
+        }
+
+        &.odd {
+          margin-right: 8%;
+        }
+      }
+    }
+
     img {
       width: 100%;
+
+      @media (min-width: $breakpoint-tablet) {
+        max-width: 559px;
+
+        &.even {
+          margin-right: 8%;
+        }
+
+        &.odd {
+          margin-left: 8%;
+        }
+      }
     }
 
     h3 {
@@ -32,6 +76,4 @@
       color: $filter-grey;
     }
   }
-  
-
 }

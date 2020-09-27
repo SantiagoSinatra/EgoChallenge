@@ -8,6 +8,14 @@
 
   padding-top: 43px;
 
+  @media (min-width: $breakpoint-tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding-right: 150px;
+    padding-left: 150px;
+  }
+
   .container-car {
     display: flex;
     flex-direction: column;

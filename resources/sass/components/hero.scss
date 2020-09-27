@@ -1,6 +1,11 @@
 .container-hero {
   margin-top: 40px;
   padding: 0 15px;
+
+  @media (min-width: $breakpoint-tablet) {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
   
   h1 {
     width: 345px;
@@ -14,5 +19,13 @@
     line-height: 1.26;
     letter-spacing: -0.7px;
     color: $font-grey;
+
+    @media (min-width: $breakpoint-tablet) {
+      width: unset;
+      font-size: 50px;
+      line-height: 1.14;
+      letter-spacing: -1px;
+      color: $filter-grey;
+    }
   }
 }

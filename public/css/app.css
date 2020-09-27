@@ -16,6 +16,14 @@ a:hover{
   color:inherit;
 }
 
+p{
+  margin:0;
+}
+
+#p-flag{
+  visibility:hidden;
+}
+
 .header{
   display:flex;
   flex-direction:row;
@@ -28,6 +36,12 @@ a:hover{
   background-color:#ffffff;
 }
 
+@media (min-width: 768px){
+  .header .mobile{
+    display:none;
+  }
+}
+
 .header .logo-ego{
   min-width:38px;
   min-height:40px;
@@ -38,6 +52,61 @@ a:hover{
   min-width:28px;
   min-height:20px;
   cursor:pointer;
+}
+
+.header .container-nav-desk{
+  display:none;
+}
+
+@media (min-width: 768px){
+  .header .container-nav-desk{
+    display:flex;
+  }
+
+  .header .container-nav-desk .tab{
+    position:relative;
+    min-width:126px;
+    font-family:"Montserrat", sans-serif;
+    font-size:14px;
+    font-weight:600;
+    font-stretch:normal;
+    font-style:normal;
+    line-height:40px;
+    text-align:center;
+    letter-spacing:normal;
+    color:#191919;
+  }
+
+  .header .container-nav-desk .tab:first-of-type{
+    margin-left:77px;
+    margin-right:41px;
+  }
+
+  .header .container-nav-desk .selected{
+    color:#eb0a1e;
+  }
+
+  .header .container-nav-desk .selected::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-15px;
+    width:100%;
+    height:3px;
+    background-color:#d0021b;
+  }
+
+  .header .container-nav-desk .menu{
+    margin-right:12px;
+    font-family:"Montserrat", sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    font-stretch:normal;
+    font-style:normal;
+    line-height:normal;
+    letter-spacing:normal;
+    color:#191919;
+  }
 }
 
 .footer{
@@ -54,6 +123,15 @@ a:hover{
   align-items:center;
   min-width:375px;
   padding-top:43px;
+}
+
+@media (min-width: 768px){
+  .container-models{
+    flex-direction:row;
+    flex-wrap:wrap;
+    padding-right:150px;
+    padding-left:150px;
+  }
 }
 
 .container-models .container-car{
@@ -96,6 +174,13 @@ a:hover{
   padding:0 15px;
 }
 
+@media (min-width: 768px){
+  .container-hero{
+    padding-left:150px;
+    padding-right:150px;
+  }
+}
+
 .container-hero h1{
   width:345px;
   height:88px;
@@ -109,6 +194,16 @@ a:hover{
   color:#191919;
 }
 
+@media (min-width: 768px){
+  .container-hero h1{
+    width:unset;
+    font-size:50px;
+    line-height:1.14;
+    letter-spacing:-1px;
+    color:#373737;
+  }
+}
+
 .container-filters{
   position:relative;
   display:flex;
@@ -118,6 +213,17 @@ a:hover{
   margin-top:40px;
   padding:0 15px 20px;
   border-bottom:1px solid #d8d8d8;
+}
+
+@media (min-width: 768px){
+  .container-filters{
+    padding-right:150px;
+    padding-left:150px;
+  }
+}
+
+.container-filters #order{
+  min-width:103px;
 }
 
 .container-filters .text-button-filter{
@@ -180,32 +286,90 @@ a:hover{
   display:block;
 }
 
+@media (min-width: 768px){
+  .container-filters .left.display{
+    display:none;
+  }
+}
+
 .container-filters .right{
   display:none;
   margin-right:15px;
   right:0px;
 }
 
+@media (min-width: 768px){
+  .container-filters .right{
+    margin-right:150px;
+  }
+}
+
 .container-filters .right.display{
   display:block;
 }
 
+.container-filters #filter-desk{
+  display:none;
+}
+
+.container-filters #filter-desk p{
+  margin-top:12px;
+}
+
+.container-filters .container-select-buttons{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.container-filters .select-button-filter{
+  margin-left:45px;
+  padding:9px 18px;
+}
+
+.container-filters .select-button-filter:first-of-type{
+  border-radius:50px;
+  background-color:#f7f7f7;
+}
+
+@media (min-width: 768px){
+  .container-filters #filter-desk{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+  }
+
+  .container-filters #filter{
+    display:none;
+  }
+}
+
 .container-nav{
   display:none;
+  flex-direction:column;
+  align-items:flex-end;
+  justify-content:center;
   min-height:858px;
+  background-color:rgba(0, 0, 0, 0.95);
+}
+
+.container-nav.show-nav{
+  display:flex;
 }
 
 .container-nav .white-container{
+  min-width:375px;
   padding:0 17px;
   background-color:#ffffff;
 }
 
 .container-nav .grey-container{
+  min-width:375px;
   padding:0 17px;
   background-color:#efeeef;
 }
 
 .container-nav #button-cross-nav{
+  margin-top:20px;
   font-family:"Montserrat", sans-serif;
   font-size:14px;
   font-weight:normal;
@@ -218,7 +382,6 @@ a:hover{
 }
 
 .container-nav #button-cross-nav img{
-  margin-top:20px;
   margin-left:11px;
   margin-right:10px;
 }
@@ -256,9 +419,28 @@ a:hover{
   padding:0 15px 38px;
 }
 
+@media (min-width: 768px){
+  .container-hero-model{
+    display:flex;
+    justify-content:space-around;
+    margin-top:80px;
+  }
+
+  .container-hero-model .container-hero-description{
+    max-width:475px;
+  }
+}
+
 .container-hero-model img{
   width:100%;
   margin-bottom:42px;
+}
+
+@media (min-width: 768px){
+  .container-hero-model img{
+    height:100%;
+    max-width:559px;
+  }
 }
 
 .container-hero-model h3{
@@ -285,6 +467,14 @@ a:hover{
   color:#191919;
 }
 
+@media (min-width: 768px){
+  .container-hero-model h2{
+    font-size:50px;
+    line-height:1.14;
+    letter-spacing:-1px;
+  }
+}
+
 .container-hero-model p{
   font-family:"Montserrat", sans-serif;
   font-size:16px;
@@ -296,9 +486,24 @@ a:hover{
   color:#373737;
 }
 
+@media (min-width: 768px){
+  .container-hero-model p{
+    max-width:385px;
+  }
+}
+
 .container-carousel{
   padding:50px 15px 52px;
   background-color:#f7f7f7;
+}
+
+@media (min-width: 768px){
+  .container-carousel{
+    display:block;
+    margin:0 auto;
+    padding-left:34%;
+    padding-right:34%;
+  }
 }
 
 .container-carousel img{
@@ -349,8 +554,54 @@ a:hover{
   padding:40px 15px 79px;
 }
 
+@media (min-width: 768px){
+  .container-description-model .row-description{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:55px;
+  }
+
+  .container-description-model .row-description .even{
+    order:1;
+  }
+
+  .container-description-model .row-description .odd{
+    order:2;
+  }
+
+  .container-description-model .row-description h3,
+  .container-description-model .row-description p{
+    max-width:385px;
+  }
+}
+
+@media (min-width: 768px){
+  .container-description-model .row-description .row-text.even{
+    margin-left:8%;
+  }
+
+  .container-description-model .row-description .row-text.odd{
+    margin-right:8%;
+  }
+}
+
 .container-description-model .row-description img{
   width:100%;
+}
+
+@media (min-width: 768px){
+  .container-description-model .row-description img{
+    max-width:559px;
+  }
+
+  .container-description-model .row-description img.even{
+    margin-right:8%;
+  }
+
+  .container-description-model .row-description img.odd{
+    margin-left:8%;
+  }
 }
 
 .container-description-model .row-description h3{

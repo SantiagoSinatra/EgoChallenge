@@ -11,6 +11,15 @@
 
   border-bottom: 1px solid $line-grey;
 
+  @media (min-width: $breakpoint-tablet) {
+    padding-right: 150px;
+    padding-left: 150px;
+  }
+
+  #order {
+    min-width: 103px;
+  }
+
   .text-button-filter {
     display: inline-block;
     margin-right: 8px;
@@ -75,6 +84,10 @@
 
     &.display{
       display: block;
+
+      @media (min-width: $breakpoint-tablet) {
+        display: none;
+      }
     }
   }
 
@@ -84,8 +97,47 @@
 
     right: 0px;
 
+    @media (min-width: $breakpoint-tablet) {
+      margin-right: 150px;
+    }
+
     &.display{
       display: block;
+    }
+  }
+
+  #filter-desk {
+    display: none;
+
+    p {
+      margin-top: 12px;
+    }
+  }
+
+  .container-select-buttons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .select-button-filter {
+    margin-left: 45px;
+    padding: 9px 18px;
+
+    &:first-of-type {
+      border-radius: 50px;
+      background-color: $light-grey;
+    }
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    #filter-desk{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    #filter {
+      display: none;
     }
   }
 }

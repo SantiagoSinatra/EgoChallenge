@@ -1,6 +1,15 @@
 @section('filters')
   <div class="container-filters">
     <div id="filter"><p class="text-button-filter">Filtrar por</p><img id="filter-img" src="/img/fill-1.svg"></div>
+    <div id="filter-desk">
+      <p class="text-button-filter">Filtrar por</p>
+      <div class="container-select-buttons">
+        <a class="select-button-filter" href="/">Todos</a>
+        <a class="select-button-filter" href="/filter/car">Autos</a>
+        <a class="select-button-filter" href="/filter/pickup">Pickups y Comerciales</a>
+        <a class="select-button-filter" href="/filter/suv">SUVs y Crossovers</a>
+      </div>
+    </div>
     <div id="order"><p class="text-button-filter">Ordenar por</p><img id="order-img" src="/img/fill-1.svg"></div>
     
     <ul id="dropdown-filter-left" class="dropdown-filter left">

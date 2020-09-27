@@ -12,6 +12,12 @@
   border-bottom: 1px solid $light-grey;
   background-color: $white;
 
+  .mobile {
+    @media (min-width: $breakpoint-tablet) {
+      display: none;
+    }
+  }
+
   .logo-ego {
     min-width: 38px;
     min-height: 40px;
@@ -22,5 +28,58 @@
     min-width: 28px;
     min-height: 20px;
     cursor: pointer;
+  }
+
+  .container-nav-desk {
+    display: none;
+
+    @media (min-width: $breakpoint-tablet) {
+      display: flex;
+
+      .tab {
+        position: relative;
+        min-width: 126px;
+        font-family: $montserrat;
+        font-size: 14px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 40px;
+        text-align: center;
+        letter-spacing: normal;
+        color: $font-grey;
+
+        &:first-of-type {
+          margin-left: 77px;
+          margin-right: 41px;
+        }
+      }
+
+      .selected {
+        color: $cherry-red;
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: -15px;
+          width: 100%;
+          height: 3px;
+          background-color: $scarlet;
+        }
+      }
+
+      .menu {
+        margin-right: 12px;
+        font-family: $montserrat;
+        font-size: 14px;
+        font-weight: normal;      
+        font-stretch: normal;      
+        font-style: normal;      
+        line-height: normal;      
+        letter-spacing: normal;
+        color: $font-grey;
+      }
+    }
   }
 }

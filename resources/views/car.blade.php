@@ -9,10 +9,11 @@
       @else
         <img src={{ asset('img/cars/'.$car->imageName.'@2x.png') }} alt={{$car->model}}>
       @endif
-      
-      <h3>{{ $car->model }}</h3>
-      <h2>Preparada para cualquier desafio</h2>
-      <p>Mayor durabilidad, estabilidad, confort de marcha y mucha seguridad. Lorem ipsum dolor sit amet. lorem ipsum dolor sit amet orem ipsum dolor..</p>
+      <div class="container-hero-description">
+        <h3>{{ $car->model }}</h3>
+        <h2>Preparada para cualquier desafio</h2>
+        <p>Mayor durabilidad, estabilidad, confort de marcha y mucha seguridad. Lorem ipsum dolor sit amet. lorem ipsum dolor sit amet orem ipsum dolor..</p>
+      </div>
     </section>
 
     <section class="container-carousel">
@@ -51,17 +52,22 @@
 
     <section class="container-description-model">
       <div class="row-description">
-        <img src="{{ asset('img/description/xray.png')}}" alt="">
-        <h3>Título de 20 px</h3>
-        <p>Texto lorem ipsum dolor sit amet orem ipsum dolor sit amet. lorem ipsum dolor sit amet orem ipsum dolor sit amet lorem ipsum dolor sit amet orem ipsum dolor sit amet.</p>
+        <img class="odd" src="{{ asset('img/description/xray.png')}}" alt="">
+        <div class="row-text even" >
+          <h3>Título de 20 px</h3>
+          <p>Texto lorem ipsum dolor sit amet orem ipsum dolor sit amet. lorem ipsum dolor sit amet orem ipsum dolor sit amet lorem ipsum dolor sit amet orem ipsum dolor sit amet.</p>
+        </div>
       </div>
 
       <div class="row-description">
-        <img src="{{ asset('img/description/offroad.png')}}" alt="">
-        <h3>Título de 20 px</h3>
-        <p>Texto lorem ipsum dolor sit amet orem ipsum dolor sit amet. lorem ipsum dolor sit amet orem ipsum dolor sit amet lorem ipsum dolor sit amet orem ipsum dolor sit amet.</p>
+        <img class="even" src="{{ asset('img/description/offroad.png')}}" alt="">
+        <div class="row-text odd">
+          <h3>Título de 20 px</h3>
+          <p>Texto lorem ipsum dolor sit amet orem ipsum dolor sit amet. lorem ipsum dolor sit amet orem ipsum dolor sit amet lorem ipsum dolor sit amet orem ipsum dolor sit amet.</p>
+        </div>
       </div>
 
     </section>
+    <div id="p-flag">models</div>
 
 @endsection

@@ -3,6 +3,13 @@
 
   background-color: $light-grey;
 
+  @media (min-width: $breakpoint-tablet) {
+    display: block;
+    margin: 0 auto;
+    padding-left: 34%;
+    padding-right: 34%;
+  }
+
   img {
     margin-bottom: 22px;
   }

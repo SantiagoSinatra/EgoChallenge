@@ -19403,14 +19403,29 @@ function displayDropdown(id) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+// Nav Controls
 $("#button-nav").on("click", function () {
-  $(".container-nav").toggle();
+  $(".container-nav").toggleClass("show-nav");
+  $(".container-main-content").toggle();
+});
+$("#button-nav-desk").on("click", function () {
+  $(".container-nav").toggleClass("show-nav");
   $(".container-main-content").toggle();
 });
 $("#button-cross-nav").on("click", function () {
-  $(".container-nav").toggle();
+  $(".container-nav").toggleClass("show-nav");
   $(".container-main-content").toggle();
-});
+}); // Tabs behavior
+
+var pageFlag = $("#p-flag").text();
+
+if (pageFlag == "home") {
+  $("#models-tab").addClass("selected");
+  $("#file-tab").removeClass("selected");
+} else {
+  $("#file-tab").addClass("selected");
+  $("#models-tab").removeClass("selected");
+}
 
 /***/ }),
 
